@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+
+body {
+  header {
+    background-color: white;
+    nav {
+      width: 90%;
+      margin: 10px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      div.collapse-btn {
+        display: none;
+      }
+      section.top-img {
+        flex: 0 1 110px;
+        a {
+          img {
+            width: 108px;
+          }
+        }
+      }
+      ul.top-left {
+        list-style: none;
+        flex: 2 1 auto;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          a {
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+            margin: 1px 4px;
+            padding: 16px 8px 10px;
+            &:hover {
+              text-decoration: underline;
+              text-underline-offset: 3px;
+              text-decoration-thickness: 2px;
+            }
+          }
+        }
+      }
+      div {
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 13px;
+          margin: 1px 4px;
+          padding: 16px 8px 10px;
+          &:hover {
+            text-decoration: underline;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 2px;
+          }
+        }
+      }
+    }
+  }
+  main {
+    picture {
+      img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+      }
+      a {
+        img {
+          width: 100%;
+          height: 90vh;
+          margin: auto;
+          display: block;
+          object-fit: cover;
+        }
+      }
+    }
+    section.middle-smallimg {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(0, 103, 184);
+        padding: 20px;
+        margin: 40px 0;
+        img {
+          width: 40px;
+        }
+        h3 {
+          margin-top: 10px;
+          font-size: 1rem;
+          font-weight: bolder;
+        }
+      }
+    }
+    section.product-card {
+      width: 90%;
+      margin: 10px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      div.card {
+        margin: 5px 1px;
+        width: 24%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 16px 21px 21px -25px rgba(0, 0, 0, 0.29);
+        div.card-top {
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        div.card-body {
+          padding: 20px;
+          flex: 1 1 auto;
+          h2 {
+            margin-bottom: 10px;
+          }
+        }
+        div.card-foot {
+          padding: 25px 20px;
+          a.btn {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgb(0, 103, 184);
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            &:hover {
+              background-color: rgb(0, 92, 165);
+            }
+          }
+        }
+      }
+    }
+    section.middle-bigimg {
+      width: 90%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+    section.bussiness {
+      width: 90%;
+      margin: 30px auto 0px;
+    }
+    section.link-group {
+      width: 90%;
+      margin: 30px auto 30px;
+      display: flex;
+      align-items: center;
+      a {
+        margin: 0px 5px;
+        color: black;
+        font-size: 25px;
+      }
+    }
+  }
+  footer {
+    background-color: rgb(242 242 242);
+    color: rgb(97 115 137);
+    font-size: 15px;
+    padding: 0 50px;
+    div.footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        h4 {
+          padding: 36px 0 4px 0;
+        }
+        a {
+          margin: 10px 0;
+          color: rgb(97 115 137);
+          font-size: 11px;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    div.footer-bot {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding: 30px 2% 16px;
+      div {
+        font-size: 11px;
+        margin: 10px 0;
+        a {
+          color: rgb(97 115 137);
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+div.footer-bot {
+  div {
+    a {
+      i {
+        font-size: 16px;
+      }
+    }
+  }
+  div:first-child {
+    min-width: 320px;
+  }
+}
+
+//所有Microsoft 下拉選單
+div.product-menu {
+  font-size: 13px;
+  display: none;
+  background-color: rgb(242 242 242);
+  width: 90vw;
+  div.product-menu-top {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    div {
+      flex: 1 1 200px;
+      margin: 10px 0;
+      display: flex;
+      flex-direction: column;
+      h4 {
+        margin-bottom: 20px;
+      }
+      a {
+        margin: 10px 0;
+        padding: 0;
+        text-decoration: none;
+        color: black;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  div.product-menu-bot {
+    background-color: rgb(230 230 230);
+    padding: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    a {
+      margin: 10px 0;
+      text-decoration: none;
+      color: black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+div.product-menu.active {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//collapseBtn選單
+ul.collapse-menu {
+  display: none;
+  list-style-type: none;
+  background-color: rgb(242 242 242);
+  max-width: 100%;
+  width: 100%;
+  li {
+    border-bottom: 1px solid #e6e6e6;
+    a {
+      border-bottom: 1px dashed transparent;
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      li {
+        width: 100%;
+        position: relative;
+        display: none;
+        a {
+          padding: 15px 25px;
+        }
+      }
+    }
+  }
+}
+
+ul.collapse-menu.active {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+  li {
+    &:hover {
+      a {
+        i {
+          transform: rotate(180deg);
+          transition: all 0.5s ease;
+        }
+      }
+      ul {
+        li {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+//響應式
+@media screen and (max-width: 1140px) {
+  body {
+    main {
+      section.product-card {
+        display: flex;
+        flex-wrap: wrap;
+        div.card {
+          width: 49%;
+        }
+      }
+    }
+    footer {
+      div.footer-top {
+        div {
+          min-width: 320px;
+        }
+      }
+      div.footer-bot {
+        div {
+          min-width: 320px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 865px) {
+  body {
+    header {
+      nav {
+        justify-content: space-between;
+        div.collapse-btn {
+          display: block;
+          order: -2;
+          a {
+            i {
+              pointer-events: none;
+            }
+          }
+        }
+        section.top-img {
+          flex: 1 1 auto;
+          text-align: center;
+        }
+        ul.top-left {
+          display: none;
+        }
+        div.product {
+          display: none;
+        }
+        div.search {
+          order: -1;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    main {
+      section.product-card {
+        display: flex;
+        flex-wrap: wrap;
+        div.card {
+          width: 100%;
+        }
+      }
+      section.middle-smallimg {
+        flex-direction: column;
+      }
+    }
+  }
+}

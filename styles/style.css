@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+
+body header {
+  background-color: white;
+}
+body header nav {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+body header nav div.collapse-btn {
+  display: none;
+}
+body header nav section.top-img {
+  flex: 0 1 110px;
+}
+body header nav section.top-img a img {
+  width: 108px;
+}
+body header nav ul.top-left {
+  list-style: none;
+  flex: 2 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+body header nav ul.top-left li a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  margin: 1px 4px;
+  padding: 16px 8px 10px;
+}
+body header nav ul.top-left li a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+body header nav div a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  margin: 1px 4px;
+  padding: 16px 8px 10px;
+}
+body header nav div a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 2px;
+}
+body main picture img {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+body main picture a img {
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main section.middle-smallimg {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main section.middle-smallimg a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(0, 103, 184);
+  padding: 20px;
+  margin: 40px 0;
+}
+body main section.middle-smallimg a img {
+  width: 40px;
+}
+body main section.middle-smallimg a h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+body main section.product-card {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+body main section.product-card div.card {
+  margin: 5px 1px;
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 16px 21px 21px -25px rgba(0, 0, 0, 0.29);
+}
+body main section.product-card div.card div.card-top img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main section.product-card div.card div.card-body {
+  padding: 20px;
+  flex: 1 1 auto;
+}
+body main section.product-card div.card div.card-body h2 {
+  margin-bottom: 10px;
+}
+body main section.product-card div.card div.card-foot {
+  padding: 25px 20px;
+}
+body main section.product-card div.card div.card-foot a.btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(0, 103, 184);
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+body main section.product-card div.card div.card-foot a.btn:hover {
+  background-color: rgb(0, 92, 165);
+}
+body main section.middle-bigimg {
+  width: 90%;
+  margin: 0 auto;
+}
+body main section.middle-bigimg img {
+  width: 100%;
+}
+body main section.bussiness {
+  width: 90%;
+  margin: 30px auto 0px;
+}
+body main section.link-group {
+  width: 90%;
+  margin: 30px auto 30px;
+  display: flex;
+  align-items: center;
+}
+body main section.link-group a {
+  margin: 0px 5px;
+  color: black;
+  font-size: 25px;
+}
+body footer {
+  background-color: rgb(242, 242, 242);
+  color: rgb(97, 115, 137);
+  font-size: 15px;
+  padding: 0 50px;
+}
+body footer div.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+body footer div.footer-top div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body footer div.footer-top div h4 {
+  padding: 36px 0 4px 0;
+}
+body footer div.footer-top div a {
+  margin: 10px 0;
+  color: rgb(97, 115, 137);
+  font-size: 11px;
+  text-decoration: none;
+}
+body footer div.footer-top div a:hover {
+  text-decoration: underline;
+}
+body footer div.footer-bot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 30px 2% 16px;
+}
+body footer div.footer-bot div {
+  font-size: 11px;
+  margin: 10px 0;
+}
+body footer div.footer-bot div a {
+  color: rgb(97, 115, 137);
+  text-decoration: none;
+}
+body footer div.footer-bot div a:hover {
+  text-decoration: underline;
+}
+
+div.footer-bot div a i {
+  font-size: 16px;
+}
+div.footer-bot div:first-child {
+  min-width: 320px;
+}
+
+div.product-menu {
+  font-size: 13px;
+  display: none;
+  background-color: rgb(242, 242, 242);
+  width: 90vw;
+}
+div.product-menu div.product-menu-top {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+div.product-menu div.product-menu-top div {
+  flex: 1 1 200px;
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+div.product-menu div.product-menu-top div h4 {
+  margin-bottom: 20px;
+}
+div.product-menu div.product-menu-top div a {
+  margin: 10px 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+div.product-menu div.product-menu-top div a:hover {
+  text-decoration: underline;
+}
+div.product-menu div.product-menu-bot {
+  background-color: rgb(230, 230, 230);
+  padding: 30px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div.product-menu div.product-menu-bot a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: black;
+}
+div.product-menu div.product-menu-bot a:hover {
+  text-decoration: underline;
+}
+
+div.product-menu.active {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+ul.collapse-menu {
+  display: none;
+  list-style-type: none;
+  background-color: rgb(242, 242, 242);
+  max-width: 100%;
+  width: 100%;
+}
+ul.collapse-menu li {
+  border-bottom: 1px solid #e6e6e6;
+}
+ul.collapse-menu li a {
+  border-bottom: 1px dashed transparent;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+ul.collapse-menu li a:hover {
+  text-decoration: none;
+}
+ul.collapse-menu li ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+ul.collapse-menu li ul li {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+ul.collapse-menu li ul li a {
+  padding: 15px 25px;
+}
+
+ul.collapse-menu.active {
+  display: block;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+ul.collapse-menu.active li:hover a i {
+  transform: rotate(180deg);
+  transition: all 0.5s ease;
+}
+ul.collapse-menu.active li:hover ul li {
+  display: block;
+}
+
+@media screen and (max-width: 1140px) {
+  body main section.product-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main section.product-card div.card {
+    width: 49%;
+  }
+  body footer div.footer-top div {
+    min-width: 320px;
+  }
+  body footer div.footer-bot div {
+    min-width: 320px;
+  }
+}
+@media screen and (max-width: 865px) {
+  body header nav {
+    justify-content: space-between;
+  }
+  body header nav div.collapse-btn {
+    display: block;
+    order: -2;
+  }
+  body header nav div.collapse-btn a i {
+    pointer-events: none;
+  }
+  body header nav section.top-img {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  body header nav ul.top-left {
+    display: none;
+  }
+  body header nav div.product {
+    display: none;
+  }
+  body header nav div.search {
+    order: -1;
+  }
+}
+@media screen and (max-width: 767px) {
+  body main section.product-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body main section.product-card div.card {
+    width: 100%;
+  }
+  body main section.middle-smallimg {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
